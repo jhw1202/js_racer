@@ -1,0 +1,14 @@
+<h1>Jay esso racer</h1>
+
+<% if @errors %>
+<% @errors.each do |message| %>
+<%= message %>
+<% end %>
+<% end %>
+<form action='/start' method="post">
+  <input type="text" name="player1[initial]" placeholder="First noob's initial"><br> 
+  <input type="text" name="player2[initial]" placeholder="Second noob's initial"><br>
+  <input type="text" name="game[name]" placeholder="Noobs' game name">
+  <input type="submit" value="submit">
+</form>
+
